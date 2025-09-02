@@ -1,30 +1,39 @@
-# ♟️ Flask Chess Engine & Interface
+<h1 align="center">♟️ Flask Chess Engine & Interface</h1>
+<p align="center">A simple chess engine with Flask backend and chess.js frontend</p>
 
-This is a simple **chess engine + web interface** built with **Flask** (Python backend) and **chessboard.js + chess.js** (frontend).  
-It lets you play chess through a clean browser interface, while all move validation and calculations are handled on the backend using **python-chess**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9-blue" />
+  <img src="https://img.shields.io/badge/Flask-2.0-lightgrey" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
 
 ---
 
 ## ✨ Features
-
-- Interactive chessboard powered by **chessboard.js** and **chess.js**  
-- Backend move validation and calculations using **python-chess**  
-- Flask server to connect frontend and backend seamlessly  
-- Supports UCI engines and Gaviota tablebases via python-chess extensions  
+- Interactive chessboard powered by **chessboard.js** + **chess.js**
+- Backend move validation and calculations using **python-chess**
+- Flask server to connect frontend and backend seamlessly
+- Supports UCI engines and Gaviota tablebases (via extensions)
 
 ---
 
 ## 🛠️ Tech Stack
-
 - **Frontend:** HTML, JavaScript, chessboard.js, chess.js  
 - **Backend:** Python, Flask, python-chess  
-- **Optional:** UCI protocol and Gaviota tablebases (via `python-chess[uci,gaviota]`)  
+- **Optional:** UCI protocol, Gaviota tablebases  
 
 ---
 
 ## ⚙️ Installation & Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/flask-chess-engine.git
-   cd flask-chess-engine
+```bash
+# Clone the repo
+git clone https://github.com/your-username/flask-chess-engine.git
+cd flask-chess-engine
+
+# Install dependencies
+pip install flask
+pip install python-chess[uci,gaviota]
+
+# Run the server
+python app.py
